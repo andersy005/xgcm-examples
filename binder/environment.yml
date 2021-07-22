@@ -1,0 +1,31 @@
+name: notebook
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - cartopy
+  - cftime
+  - dask-gateway>=0.9.0
+  - dask-kubernetes>=0.11.0
+  - dask-labextension
+  - dask>=2021.7
+  - distributed >=2021.7
+  - fsspec
+  - gcsfs
+  - hvplot
+  - intake-esm>=2021.1.15
+  - ipywidgets
+  - jupyter-server-proxy
+  - jupyterhub-singleuser
+  - jupyterlab>=3
+  - nbgitpuller
+  - nc-time-axis
+  - nodejs
+  - panel
+  - pip
+  - s3fs
+  - voila
+  - watermark
+  - pip:
+     - git+https://github.com/xgcm/xgcm.git@master#egg=xgcm
+     - ptime
