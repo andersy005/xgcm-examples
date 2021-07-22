@@ -53,6 +53,7 @@ jobs:
       - name: Build notebooks using Binderbot
         run: |
           python -m binderbot.cli \
+          --nb-timeout 1800 \
           --binder-url ${{ steps.parse.outputs.binder_url }} \
           --repo ${{ steps.parse.outputs.binder_repo }} \
           --ref ${{ steps.parse.outputs.binder_ref }} \
