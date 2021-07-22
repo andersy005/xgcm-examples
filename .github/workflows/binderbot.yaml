@@ -10,7 +10,7 @@ on:
       - 'binder-gallery.yaml'
       - 'thumbnail.png'
       - '.github/workflows/binderbot.yaml'
-      - '.binder/**'
+      - 'binder/**'
   pull_request:
     branches:
       - master
@@ -19,7 +19,7 @@ on:
       - 'binder-gallery.yaml'
       - 'thumbnail.png'
       - '.github/workflows/binderbot.yaml'
-      - '.binder/**'
+      - 'binder/**'
 
 jobs:
   build:
